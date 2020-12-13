@@ -1,0 +1,187 @@
+/* headlines */
+
+h1,h2,h3,h4,h5,h6 {
+	line-height: 1.2;
+	margin-top: 0;
+}
+
+p + h2,
+p + h3,
+p + h5,
+p + h6 {
+	margin-top: 2.25em;
+}
+
+p + h4 {
+	margin-top: 1em;
+}
+
+
+h1,.look-like-h1 {
+	color: color(secondary,base);
+	font-size: 1.5rem;
+	margin-bottom: 1em;
+	text-align: left;
+	font-family: $font-headline;
+	letter-spacing: 0.05em;
+
+	@media (min-width: $md ){
+		font-size: 2rem;
+	}
+}
+
+h2,.look-like-h2 {
+	font-family: $font-headline;
+	color: color(secondary,base);
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 0.25em;
+	text-align: left;
+	letter-spacing: 3px;
+}
+
+h3,.look-like-h3 {
+	font-family: $font-headline;
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-bottom: 0.85em;
+	text-align: left;
+	letter-spacing: 0.1em;
+	width: 100%;
+}
+
+h4 {
+	font-size: 0.85rem;
+	margin-bottom: 0.2em;
+	line-height: 1.5;
+}
+
+p,
+ul,
+ol,
+label,
+table {
+	font-size: 0.7rem;
+	line-height: 1.5;
+	margin: 0 0 1em 0;
+	font-weight: 400;
+}
+
+
+/* sup */
+
+sup {
+	white-space: nowrap; // prevent the sup notes breaking a line
+}
+
+.p2 {
+	font-size: 0.85rem;
+	line-height: 1.5;
+}
+
+/* small */
+
+small {
+	display: block;
+	font-size: 0.5rem;
+	font-style: italic;
+	margin-bottom: 2.4em;
+}
+
+p small {
+	font-size: 0.9em;
+	margin-bottom: -1.2em;
+}
+
+.form small {
+	text-align: right;
+}
+
+/* links */
+
+a {
+	color: color(secondary,base);
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 400;
+	@include transition( all 0.3s );
+
+	&:hover,
+	&:focus {
+	}
+
+}
+
+a[href^=tel] {
+	cursor: text;
+}
+
+.remove-link-style {
+	color: inherit;
+	border-bottom: 0;
+
+	&:hover,
+	&:focus {
+	}
+}
+
+/* lists */
+
+ul,ol {
+	padding-inline-start: 0px;
+	list-style: none;
+	list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7); // for IE10 and above. Read more here -> https://stackoverflow.com/questions/20356311/internet-explorer-11-ignores-list-stylenone-on-the-first-load
+}
+
+li {
+	margin-bottom: 0.3em;
+	position: relative;
+}
+
+ol {
+	counter-reset: ol-counter;
+}
+
+ol li::before {
+	color: color(primary,base);
+	content: counter(ol-counter, decimal-leading-zero) '';
+	counter-increment: ol-counter;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: -2.8em;
+	margin-right: 0.6em;
+	width: 1.43em;
+}
+
+ul li::before {
+	background-color: #ffffff;
+	content: '';
+	display: inline-block;
+	height: 2px;
+	margin-left: -1.8em;
+	margin-right: 0.7em;
+	position: relative;
+	top: -3px;
+	width: 0.5em;
+}
+
+.list::before {
+	background-color: color(primary,base);
+	content: '';
+	display: inline-block;
+	height: 2px;
+	margin-left: 0em;
+	margin-right: 0.7em;
+	position: relative;
+	top: -3px;
+	width: 0.5em;
+}
+
+.column-text {
+	column-count: 2;
+	column-gap: 1.5em;
+}
+
+.look-white {
+	color: #fff;
+}

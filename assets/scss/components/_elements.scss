@@ -1,0 +1,62 @@
+.tree {
+	position: absolute;
+
+	&__1 {
+		width: 15rem;
+		left: 0;
+		top: 0;
+		transform: translate(-10%, -70%);
+	}
+
+	&__2 {
+		width: 12rem;
+		right: 0;
+		bottom: 0;
+		transform: translate(30%, 70%);
+
+		@media (min-widht: $sm){
+			transform: translate(30%, 55%);
+		}
+	}
+}
+
+.home-tree {
+	
+	&__1 {
+		width: 35%;
+		right: 0;
+		top: 0;
+		transform: translate(25%, -14%);
+	}
+
+	&__2 {
+		width: 25%;
+		left: 0;
+		top: 0;
+		transform: translate(-45%, 190%);
+	}
+
+	&__3 {
+		width: 25%;
+		right: 0;
+		bottom: 0;
+		transform: translate(20%, 75%);
+	}
+}
+
+.visit-tree {
+
+	&__1 {
+		width: 20%;
+		right: 0;
+		top: 0;
+		transform: translate(30%, -40%);
+	}
+
+	&__2 {
+		width: 30%;
+		left: 0;
+		bottom: 0;
+		transform: translate(-20%, 30%);
+	}
+}

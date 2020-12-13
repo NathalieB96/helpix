@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="73" viewBox="0 0 230 73">
+  <g id="logo" transform="translate(-355 -878)">
+    <text id="helpix" transform="translate(437 932)" fill="#1d1d1d" font-size="60" font-family="NerkoOne-Regular, Nerko One"><tspan x="0" y="0">helpix</tspan></text>
+    <g id="Gruppe_34" data-name="Gruppe 34" transform="translate(0 -8)">
+      <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(355 889)" fill="none" stroke="#e55934" stroke-width="6">
+        <circle cx="33.5" cy="33.5" r="33.5" stroke="none"/>
+        <circle cx="33.5" cy="33.5" r="30.5" fill="none"/>
+      </g>
+      <path id="Vereinigungsmenge_3" data-name="Vereinigungsmenge 3" d="M-1806-1617.408l24.677-13.852a11.144,11.144,0,0,1,.385-3.767,11.435,11.435,0,0,1,5.442-6.917,11.857,11.857,0,0,1,6.378-1.533,11.764,11.764,0,0,1,6.039,1.975l-5.664,3.18a4.835,4.835,0,0,0-2.324,2.945,4.7,4.7,0,0,0,.488,3.661l.01.018a5.07,5.07,0,0,0,6.812,1.775l5.634-3.163a11.206,11.206,0,0,1-1.273,6.124,11.552,11.552,0,0,1-4.544,4.658,11.818,11.818,0,0,1-8.827,1.165,11.67,11.67,0,0,1-3.676-1.663l-24.572,13.793Z" transform="translate(2545.872 1999.315) rotate(-16)" fill="#e55934"/>
+    </g>
+  </g>
+</svg>

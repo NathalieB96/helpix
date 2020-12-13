@@ -1,0 +1,87 @@
+.form-background {    
+    background-color: color(secondary,base);
+}
+
+
+.form {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+
+    &__field {
+        width: 50%;
+        padding: 0em 0.5em;
+    }
+
+    &__message {
+        width: 100%;
+        padding: 0em 0.5em;
+
+        input {
+            width: 100%;
+        }
+    }
+}
+
+.form h3 {
+  padding: 0em 0.5em;
+}
+
+input, select, textarea{
+    margin-bottom: 1rem;
+    width: 100%;
+    border-color:color(primary,base);
+    border-width: 2px;
+    padding: 0.4em 0.2em;
+}
+
+.request-section {
+  background-color: #fff;
+}
+
+.tweets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tweet {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 2px;
+    font-size: .875rem;
+    width: 48%;
+    box-shadow: 6px 6px 20px rgba(0,0,0,0.3);
+    border-radius: 0.6em;
+  }
+  
+  .tweet h3 {
+    font-weight: bold;
+  }
+  
+  .new-tweet {
+    display: flex;
+  }
+  
+  .new-tweet input {
+    flex-grow: 1;
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+  
+  .new-tweet button {
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #fff;
+    color: color(primary,base);
+    border-color: color(primary,base);
+    transition: .25s;
+  }
+  
+  .new-tweet button:hover {
+    background-color: color(primary,base);
+    color: #fff;
+  }
